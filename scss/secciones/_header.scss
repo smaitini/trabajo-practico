@@ -11,7 +11,13 @@
     width: 160px;
     height: 80px;
    }
-   background: $gradiente-header;
+   .nav-link{
+    &:hover{
+        color: rgb(57, 55, 54);
+        font-size: larger;
+        text-decoration: dotted;
+    }
+   }
 }
 .navbar-collapse{
     flex-direction: column-reverse;

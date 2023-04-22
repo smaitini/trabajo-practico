@@ -1,3 +1,32 @@
-.footer{
-    min-height: 25vh;
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-linea {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    margin: 20;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 150px;
+  }
+  img {
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    }
+  }
+  span {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;    &:hover{
+        color: white;
+  }
 }
