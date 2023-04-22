@@ -1,6 +1,9 @@
 .header{
-    color: grey;;
-    min-height: 15vh;
+    min-height: 20vh;
+   /* background-image: url('https://images.unsplash.com/photo-1634497885778-152eb6fd543d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover ;*/
     .typo_titulo{
     font-family: $letra_lobster;
    }
@@ -8,5 +11,10 @@
     width: 160px;
     height: 80px;
    }
-  
+   background: $gradiente-header;
 }
+.navbar-collapse{
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+}
+
