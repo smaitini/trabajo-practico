@@ -1,5 +1,12 @@
 .header{
-    background-color: rgba(255, 0, 200, 0.365);
-    color: red;
-   font-family: $letra_lobster;
+    color: grey;;
+    min-height: 15vh;
+    .typo_titulo{
+    font-family: $letra_lobster;
+   }
+   img {
+    width: 160px;
+    height: 80px;
+   }
+  
 }
