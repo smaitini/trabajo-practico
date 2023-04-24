@@ -52,6 +52,8 @@
   flex-direction: column; }
   .main .img-presentacion {
     align-items: center; }
+  .main ul {
+    list-style: none; }
   .main h1 {
     margin: 20px;
     font-family: "Cinzel Decorative", cursive;
@@ -198,6 +200,9 @@
   color:cadetblue;
 }
 */
+hr {
+  border-color: khaki; }
+
 .footer {
   margin: 0;
   padding: 0;
@@ -215,10 +220,6 @@
     justify-content: center;
     height: 80px;
     width: 150px; }
-  .footer-linea img {
-    align-items: center;
-    width: 20px;
-    height: 20px; }
 
 span {
   text-align: center;
@@ -270,3 +271,8 @@ span {
 @media (max-width: 560px) {
   .whatsappchat img {
     max-width: 140px; } }
+
+img {
+  align-items: center;
+  width: 20px;
+  height: 20px; }
