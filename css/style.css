@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=PT+Sans+Narrow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 .header {
   margin: 0;
   padding: 0;
@@ -18,18 +19,32 @@
   .header .nav-link:hover {
     color: #393736;
     font-size: larger;
-    text-decoration: dotted; }
+    text-decoration: underline; }
+  .header h5 {
+    margin: 20;
+    font-family: "Lobster", cursive; }
 
 .navbar-collapse {
   flex-direction: column-reverse;
   flex-direction: row-reverse; }
+
+.flex-header {
+  display: flex;
+  place-content: space-between space-evenly;
+  flex-wrap: nowrap;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .main {
   display: flex;
   margin: 0px;
   padding: 0;
   min-height: 85vh;
-  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/04/wood-1853403_1280.jpg);
+  background-image: url(https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
   background-repeat: no-repeat;
   background-size: cover;
   align-content: stretch;
@@ -41,7 +56,9 @@
     margin: 20px;
     font-family: "Cinzel Decorative", cursive;
     text-align: center;
-    background-color: #a9937c2c; }
+    background-color: #a9937c2c;
+    width: 400px;
+    align-items: center; }
   .main h2 h3 h4 {
     font-family: "Cinzel Decorative", cursive; }
   .main h5 {
@@ -56,12 +73,18 @@
   .main p {
     background-color: rgba(245, 245, 220, 0.027);
     color: black; }
+  .main .flex-gral {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
 
 .flex-logo {
   display: flex; }
 
 .gradiente {
-  background: linear-gradient(180deg, #C6BFB7 0%, #B6AEA9 100%); }
+  background: linear-gradient(180deg, #D8D4D3 0%, #C9C5C2 100%); }
 
 .productos-destacados {
   display: flex;
@@ -105,30 +128,29 @@
   justify-content: space-between; }
 
 .btn {
+  margin: 20px;
   width: 100px;
   font-size: 20px;
-  height: 60px;
+  height: 40px;
   border: none;
   outline: none;
-  background: #c38b8b;
   color: #fff;
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 10px;
-  background-image: url(https://cdn.pixabay.com/photo/2016/11/23/15/04/wood-1853403_1280.jpg); }
+  border-radius: 10px; }
 
 .btn::before {
   position: absolute;
   content: "";
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
   left: -2px;
   top: -2px;
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background: linear-gradient(124deg, #e8b71d, #e3e81d, #1de840, #1ddde8);
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(2px);
   animation: move 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -189,7 +211,7 @@ span {
 .whatsappchat {
   padding: 15px;
   position: fixed;
-  bottom: 80px;
+  bottom: 40px;
   right: 0;
   list-style: none; }
 
@@ -199,9 +221,8 @@ span {
   margin: 0; }
 
 .whatsappchat img {
-  width: 200px;
-  height: 70px;
-  max-width: 200px; }
+  width: 100px;
+  height: 35px; }
 
 .whatsappchat a:hover:before {
   opacity: 0.3;
