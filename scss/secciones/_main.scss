@@ -59,6 +59,15 @@
     justify-content: space-around;
 
   }
+  .flex-gral-vertical{
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+  }
 }
 
 .flex-logo {
@@ -69,33 +78,6 @@
   background: $gradiente-header;
 }
 
-.productos-destacados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    width: 300px;
-    justify-content: space-evenly;
-  }
-
-  img {
-    align-items: center;
-    width: 200px;
-    height: 200px;
-  }
-
-  span {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-}
 
 .h5-gris {
   margin: 20;
@@ -105,12 +87,13 @@
 }
 
 
-.carousel {
+/*.carousel {
   width: 50%;
   align-content: center;
 }
-
+*/
 .flex {
+  margin:10px;
   display: flex;
   place-content: space-between space-evenly;
   flex-wrap: nowrap;
@@ -206,18 +189,10 @@
   }
 }
 
-.card {
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/*.btn:hover{
-  color:cadetblue;
-}
-*/
-
 hr {
   border-color: khaki;
+}
+
+.borde {
+  margin: 10px;
 }

@@ -19,11 +19,19 @@
     height: 80px;
     width: 150px;
   }
+}
+
+span {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+
+  &:hover {
+    color: white;
   }
-  span {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-small;    &:hover{
-        color: white;
+
+  .img-mapa {
+    width: 600;
+    height: 950;
   }
 }

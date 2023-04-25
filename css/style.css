@@ -82,6 +82,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around; }
+  .main .flex-gral-vertical {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
 
 .flex-logo {
   display: flex; }
@@ -89,37 +96,19 @@
 .gradiente {
   background: linear-gradient(180deg, #D8D4D3 0%, #C9C5C2 100%); }
 
-.productos-destacados {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .productos-destacados div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    height: 400px;
-    width: 300px;
-    justify-content: space-evenly; }
-  .productos-destacados img {
-    align-items: center;
-    width: 200px;
-    height: 200px; }
-  .productos-destacados span {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif; }
-
 .h5-gris {
   margin: 20;
   font-family: "Cinzel Decorative", cursive;
   text-decoration: underline;
   color: dimgray !important; }
 
-.carousel {
+/*.carousel {
   width: 50%;
-  align-content: center; }
-
+  align-content: center;
+}
+*/
 .flex {
+  margin: 10px;
   display: flex;
   place-content: space-between space-evenly;
   flex-wrap: nowrap;
@@ -192,16 +181,11 @@
   .flex-titulo h2 {
     color: dimgray; }
 
-.card img {
-  width: 100%;
-  height: 100%; }
-
-/*.btn:hover{
-  color:cadetblue;
-}
-*/
 hr {
   border-color: khaki; }
+
+.borde {
+  margin: 10px; }
 
 .footer {
   margin: 0;
@@ -227,6 +211,9 @@ span {
   font-size: x-small; }
   span:hover {
     color: white; }
+  span .img-mapa {
+    width: 600;
+    height: 950; }
 
 /*Para imagen wapp*/
 .whatsappchat {
@@ -235,44 +222,48 @@ span {
   bottom: 40px;
   right: 0;
   list-style: none; }
+  .whatsappchat ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .whatsappchat img {
+    width: 40px;
+    height: 40px; }
+    .whatsappchat img:hover {
+      transition: 2s;
+      rotate: 360deg; }
 
-.whatsappchat ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
+.span-wap {
+  color: #279e27;
+  position: fixed;
+  bottom: 20px;
+  right: 11px;
+  font-size: medium; }
 
-.whatsappchat img {
-  width: 100px;
-  height: 35px; }
-
-.whatsappchat a:hover:before {
-  opacity: 0.3;
-  top: 0; }
-
-.whatsappchat ul a {
-  color: white;
-  padding: 15px;
-  display: block;
-  line-height: 1;
-  font-size: 40px;
-  position: relative;
-  overflow: hidden; }
-
+/*
 @media (max-width: 820px) {
-  .social-lateral {
-    padding: 3px; }
-  /*
+    .social-lateral {
+        padding: 3px;
+    }
+
+   
     .social-lateral ul a {
         padding: 10px;
         font-size: 18px;
     }
-*/ }
+
+}
 
 @media (max-width: 560px) {
-  .whatsappchat img {
-    max-width: 140px; } }
-
-img {
+    .whatsappchat img {
+        max-width: 140px;
+    }
+}
+*/
+.img-chiquita {
   align-items: center;
   width: 20px;
   height: 20px; }
+
+.card {
+  margin: 10px; }
