@@ -3,7 +3,6 @@
   padding: 0;
   min-height: 5vh;
   background-color: map-get($colores, zlatan);
-  //background-image: url(https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
 
   span {
     text-align: center;
@@ -66,6 +65,7 @@
 
 }
 
+/*Esto lo puse aca  para saber es orden de los parametrs, no para ocultar codigo*/
 // @mixin flex($estilo,$justify,$aling,$wrap){
 //   display:flex;
 //   flex-direction: $estilo;
