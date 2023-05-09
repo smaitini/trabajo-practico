@@ -1,1 +1,43 @@
-$gradiente-header: linear-gradient(180deg,#D8D4D3 0%, #C9C5C2 100%);
+@import './tipo';
+
+$colores: (
+    "negro":black,
+    "blanco":white,
+    "amarillo":yellow,
+    "verde":green,
+    "gris":grey,
+    "gris_oscuro":rgb(70, 69, 69),
+    "naranja":orange,
+    "purpura":purple,
+    "rojo":red  ,
+    "azul":blue,
+    "celeste":lightblue,
+    "rosa":pink,
+    "transparente":rgba(25, 0, 255, 0),
+    "zlatan":#212529,
+    "gris-clarito":rgb(173, 170, 170),
+    "fondo": #E2DFDB,
+    "marron":#6b3a02,
+    "marron-claro":#945104
+    );
+$fuentes:(
+    "titulo":Arial,
+    "parrafo": verdana,
+    "subtitulo":$logo,
+    "titulo2":$titulos-muebles
+);
+$tamanos:(
+    "xs":15px,
+    "s":20px,
+    "m":30px,
+    "l":50px,
+    "xl":80px,
+    "xxl": 120px
+);
+$porcentaje-tmn:(
+    "nulo":0%,
+    "cuarto":25%,
+    "medio":50%,
+    "tres-cuartos":75%,
+    "lleno":100%
+)

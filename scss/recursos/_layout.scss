@@ -1,0 +1,33 @@
+@mixin grid($columnas,$espacio){
+    display:grid;
+    grid-template-columns: repeat($columnas,$espacio);
+    @media screen and (max-width: 992px) {
+        .column {
+          width: 50%;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+}
+
+// @mixin flex($estilo,$justify,$aling,$wrap){
+//     display:flex;
+//     flex-direction: $estilo;
+//     justify-content: $justify;
+//     align-items: $aling;
+//     flex-wrap: $wrap;
+
+//   }    
+  @mixin flex($estilo,$justify-content,$aling,$wrap, $aling-content){
+    display:flex;
+    flex-direction: $estilo;
+    justify-content: $justify-content;
+    align-items: $aling;
+    flex-wrap: $wrap;
+    align-content:$aling-content;
+  
+  }    

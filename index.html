@@ -1,129 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muebleria Zalatan</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css " rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <!--<link rel="stylesheet" href="./css/bootstrap.css" />-->
-  <link rel="stylesheet" href="./css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Muebles, amoblabientos, casa, jardin, living, comedor">
+  <meta name="description" content="Zlatan Muebles, si el mueble que busca no esta aca, es porque no existe">
+  <link rel="icon" type="image/x-icon" href="./images/Zlatan_Muebles.png">
+  <title>Muebleria Zlatan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header class="header gradiente">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <div class="flex-header">
-          <a class="navbar-brand" href="#"><img src="./Imagenes/logo.PNG" alt="Logo" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <header class="header">
+    <div class="header__flex--vertical">
+      <img src="./images/logo_fondo_gris.png" alt="Logo_Zlatan">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/quienes-somos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contactanos.html">Contactenos</a>
+              </li>
+          </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./index.html"
-                >Inicio</a
-              >
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <h1>Muebles Zlatan</h1>
+    <carusel>
+      <div class="container">
+        <div class="carousel">
+          <input type="radio" name="slides" checked="checked" id="slide-1">
+          <input type="radio" name="slides" id="slide-2">
+          <input type="radio" name="slides" id="slide-3">
+          <input type="radio" name="slides" id="slide-4">
+          <input type="radio" name="slides" id="slide-5">
+          <input type="radio" name="slides" id="slide-6">
+          <ul class="carousel__slides">
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="./images/Sillon_toronto.jpg" alt="Sillon_toronto">
+                </div>
+                <figcaption>
+                  <!-- <div class="borde"> -->
+                  <span class="main__texto--grande main__negrita">Sillon: </span>
+                  <p class="main__texto--mediano">De dos cuerpos tipo Toronto</p>
+                  <h4 class="main__texto--chico main__negrita">Medidas: </h4>
+                  <h5 class="main__texto--chico">
+                    Largo: 180cm</h5>
+                  <h5 class="main__texto--chico"> Alto: 90cm</h5>
+                  <span class="credit">Procedencia: Canada</span>
+                  <!-- </div> -->
+                  <button class="btn btn-secondary">Comprar</button>
+                </figcaption>
+              </figure>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./paginas/quienes-somos.html">Quienes Somos</a>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="./images/Sillon_marron_claro.jpg" alt="Sillon_marron_claro">
+                </div>
+                <figcaption>
+                  <!-- <div class="borde"> -->
+                  <span class="main__texto--grande main__negrita">Sillon: </span>
+                  <p class="main__texto--mediano">De tres cuerpos Color Marron
+                  </p>
+                  <h4 class="main__texto--chico main__negrita">Medidas: </h4>
+                  <h5 class="main__texto--chico">
+                    Largo: 230cm</h5>
+                  <h5 class="main__texto--chico"> Alto: 90cm</h5>
+                  <span class="credit">Procedencia: Argentina</span>
+                  <!-- </div> -->
+                  <button class="btn btn-secondary">Comprar</button>
+                </figcaption>
+              </figure>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./paginas/productos.html">Productos</a>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="./images/Sofa_verde.jpg" alt="Sofa_gamuza_verde">
+                </div>
+                <figcaption>
+                  <!-- <div class="borde"> -->
+                  <span class="main__texto--grande main__negrita">Sillon: </span>
+                  <p class="main__texto--mediano">De dos cuerpos - Material Gamuza Verde</p>
+                  <h4 class="main__texto--chico main__negrita">Medidas: </h4>
+                  <h5 class="main__texto--chico">
+                    Largo: 180cm</h5>
+                  <h5 class="main__texto--chico"> Alto: 90cm</h5>
+                  <span class="credit">Procedencia: Argentina</span>
+                  <!-- </div> -->
+                  <button class="btn btn-secondary">Comprar</button>
+                </figcaption>
+              </figure>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./paginas/sucursales.html">Sucursales</a>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="./images/Escritorio.jpg" alt="Escritorio">
+                </div>
+                <figcaption>
+                  <!-- <div class="borde"> -->
+                  <span class="main__texto--grande main__negrita">Escritorio: </span>
+                  <p class="main__texto--mediano">Matrial: Madera color blanca y marron</p>
+                  <h4 class="main__texto--chico main__negrita">Medidas: </h4>
+                  <h5 class="main__texto--chico">
+                    Largo: 100cm</h5>
+                  <h5 class="main__texto--chico"> Alto: 90cm</h5>
+                  <h5 class="main__texto--chico"> Profundidad: 90cm</h5>
+                  <span class="credit">Procedencia: Argentina</span>
+                  <!-- </div> -->
+                  <button class="btn btn-secondary">Comprar</button>
+                </figcaption>
+              </figure>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./paginas/contacto.html">Contactenos</a>
+            <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="./images/juego_jardin.jpg" alt="juego_jardin">
+                </div>
+                <figcaption>
+                  <!-- <div class="borde"> -->
+                  <span class="main__texto--grande main__negrita">Juego de jardin: </span>
+                  <p class="main__texto--mediano">Sillon dos cuerpos con colchones rojos y mesita ratona de mimbre</p>
+                  <h4 class="main__texto--chico main__negrita">Medidas Sillon | Mesita</h4>
+                  <h5 class="main__texto--chico">
+                    Largo: 100cm | 80cm</h5>
+                  <h5 class="main__texto--chico"> Alto: 90cm | 70cm</h5>
+                  <!-- <h4 class="main__texto--chico main__negrita">Medidas Mesita: </h4>
+                  <h5 class="main__texto--chico">
+                    Ancho: 80cm</h5>
+                  <h5 class="main__texto--chico"> Alto: 70cm</h5>
+                  <span class="credit">Procedencia: España</span> -->
+                  <!-- </div> -->
+                  <button class="btn btn-secondary">Comprar</button>
+                </figcaption>
+              </figure>
             </li>
+            <!-- <li class="carousel__slide">
+              <figure>
+                <div>
+                  <img src="https://picsum.photos/id/1052/800/450" alt="">
+                </div>
+                <figcaption>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <span class="credit">Photo: Annie Spratt</span>
+                </figcaption>
+              </figure>
+            </li> -->
+          </ul>
+          <ul class="carousel__thumbnails">
+            <li>
+              <label for="slide-1"><img class="negra_blanca" src=".//images/Sillon_toronto.jpg" alt=""></label>
+            </li>
+            <li>
+              <label for="slide-2"><img class="negra_blanca" src="./images/Sillon_marron_claro.jpg" alt=""></label>
+            </li>
+            <li>
+              <label for="slide-3"><img class="negra_blanca" src="./images/Sofa_verde.jpg"
+                  alt="Sofa_gamuza_verde"></label>
+            </li>
+            <li>
+              <label for="slide-4"><img class="negra_blanca" src="./images/Escritorio.jpg" alt="Escritorio"></label>
+            </li>
+            <li>
+              <label for="slide-5"><img class="negra_blanca" src="./images/juego_jardin.jpg" alt="juego_jardin"></label>
+            </li>
+            <!-- <li>
+              <label for="slide-6"><img class="negra_blanca" src="https://picsum.photos/id/1052/150/150" alt=""></label>
+            </li> -->
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
-  <main class="main">
-    <div class="flex">
-      <h1>Ofertas mensuales</h1>
-      <div id="carouselExampleCaptions" class="carousel">
-        <slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="https://images.unsplash.com/photo-1595514535711-c31bb982d8b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-                class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.unsplash.com/photo-1541558869434-2840d308329a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
-                class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img
-                src="https://images.unsplash.com/photo-1615402052294-a376393da320?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 "
-                class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-      </div>
-      <button class="btn_1">Comprar</button>
-    </div>
+    </carusel>
   </main>
-  <footer class="footer gradiente">
-    <div class="footer-linea">
-      <div>
-        <img class="img-chiquita" src="./Imagenes/instagram_transparente.png" alt="instagram" />
-        <span>@ZlatanMuebles</span>
-      </div>
-      <div>
-        <img class="img-chiquita" src="./Imagenes/twitter__transparente.png" alt="twitter" /><span>@ZlatanMuebles</span>
-      </div>
-      <div><img class="img-chiquita" src="./Imagenes/whatsapp_3.png" alt="whatsapp" />
-        <span>+54 1164650000</span>
-      </div>
-      <div><img class="img-chiquita" src="./Imagenes/ubicacion-gris.png" alt="ubicacion" />
-        <span>Av. Mitre 1001 - Villa Martelli</span>
-      </div>
-      <div><img class="img-chiquita" src="./Imagenes/telefono.png" alt="telefono" />
-        <span>+54 11 64658900</span>
-      </div>
+  <footer class="footer">
+    <div class="footer__linea">
+      <article>
+        <div>
+          <h6 class="siganme">Seguinos</h6>
+        </div>
+        <div>
+          <img class="img-chiquita" src="./images/instagram_transparente.png" alt="instagram" />
+          <span>@ZlatanMuebles</span>
+        </div>
+        <div>
+          <img class="img-chiquita" src="./images/twitter__transparente.png" alt="twitter" /><span>@ZlatanMuebles</span>
+        </div>
+        <div>
+          <a href="https://api.whatsapp.com/send?phone=541164658663&amp;text=Hola!%20Quiero%20hacer%20una%20consulta"
+            title="54 911 64658663"><img class="img-chiquita" src="./images/whatsapp._2png.png" alt="whatsapp" /></a>
+          <span>+54 1164650000</span>
+        </div>
+        <div>
+          <img class="img-chiquita" src="./Images/ubicacion-gris.png" alt="ubicacion" />
+          <span>Av. Mitre 1001 - Villa Martelli</span>
+        </div>
+        <div><img class="img-chiquita" src="./Images/telefono.png" alt="telefono" />
+          <span>+54 11 64658900</span>
+        </div>
+      </article>
+      <article class="tarjetas-flex">
+        <div>
+          <img class="tarjetas" src="./images/Tarjetas/amex@2x.png" alt="medios de pago">
+          <img class="tarjetas" src="./images/Tarjetas/cencosud@2x.png" alt="medios de pago">
+          <img class="tarjetas" src="./images/Tarjetas/mastercard@2x.png" alt="medios de pago">
+        </div>
+        <div>
+          <img class="tarjetas" src="./images/Tarjetas/pagofacil@2x.png" alt="medios de pago">
+          <img class="tarjetas" src="./images/Tarjetas/rapipago@2x.png" alt="medios de pago">
+          <img class="tarjetas" src="./images/Tarjetas/visa.png" alt="medios de pago">
+        </div>
+        <div><img class="tarjetas" src="./images/Tarjetas/mercadopago@2x.png" alt="medios de pago"></div>
+      </article>
+      <article>
+        <div>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="./pages/quienes-somos.html">Quienes Somos</a>
+            </li>
+            <li>
+              <a href="./pages/productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="./pages/sucursales.html">Sucursales</a>
+            </li>
+            <li>
+              <a href="./pages/contactanos.html">Contactenos</a>
+            </li>
+
+        </div>
+      </article>
     </div>
-
-
-    <section>
-      <div class="whatsappchat">
-        <ul class="ul">
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=541164658663&amp;text=Hola!%20Quiero%20hacer%20una%20consulta"
-              title="54 911 64658663"><img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" /></a>
-          </li>
-          <p class="span-wap">Hablemos</p>
-        </ul>
-      </div>
-    </section>
+    <div class="whatsappchat">
+      <ul class="ul">
+        <li>
+          <a href="https://api.whatsapp.com/send?phone=541164658663&amp;text=Hola!%20Quiero%20hacer%20una%20consulta"
+            title="54 911 64658663"><img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" /></a>
+        </li>
+        <p class="span-wap">Hablemos</p>
+      </ul>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
